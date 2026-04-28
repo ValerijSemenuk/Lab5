@@ -18,10 +18,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 'latest'
+          node-version: '24'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --include=dev
 
       - name: Run Lint
         run: npm run lint
