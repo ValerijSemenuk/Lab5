@@ -21,7 +21,7 @@ jobs:
           node-version: 'latest'
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm ci --include=dev
 
       - name: Run Lint
         run: npm run lint
